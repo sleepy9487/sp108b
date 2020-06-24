@@ -12,30 +12,22 @@ ASSIGN = id '=' E;
 E = F (op E)*
 F = (E) | Number | Id
 ```
-
-## 執行結果
-
-```
-user@DESKTOP-96FRN6B MINGW64 /d/ccc/book/sp/code/c/02-compiler/03-compiler
-$ make clean
-rm -f *.o *.exe
-
-user@DESKTOP-96FRN6B MINGW64 /d/ccc/book/sp/code/c/02-compiler/03-compiler
-$ make
+## 指令
+make
 gcc -std=c99 -O0 lexer.c compiler.c main.c -o compiler
+./compiler test/if.c
 
-user@DESKTOP-96FRN6B MINGW64 /d/ccc/book/sp/code/c/02-compiler/03-compiler
-$ ./compiler test/while.c
-while (i<10) i = i + 1;
-
-a = 3;
-b = 5;
+## 測試範例
+a = 3;     
+b = 5;     
 if (a > b){
-    t = a;
+    t = a; 
 }
-else{
+else{      
    t = b;
 }
+
+## 執行結果
 ========== lex ==============
 token=a
 token==
