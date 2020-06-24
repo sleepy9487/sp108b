@@ -1,7 +1,7 @@
 ## 指令
-mingw32-make
-gcc -std=c99 -O0 ir.c irvm.c map.c util.c lexer.c compiler.c main.c -o compiler
-./compiler test/ -ir
+mingw32-make  
+gcc -std=c99 -O0 ir.c irvm.c map.c util.c lexer.c compiler.c main.c -o compiler  
+./compiler test/ -ir  
 # 執行結果
 
 main.c => lexer.c
